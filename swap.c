@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 void main(){
-     char str[20],tmp;
+     char s[20],t;
      int i,j;
-     printf("\nEnter a string : ");
-     scanf("%s",str);
-     printf("\n\nOriginal String     : %s",str);
-     for(i=0;i<strlen(str);i=i+2){
-     tmp = str[i];
-     str[i] = str[i+1];
-     str[i+1] = tmp;
+     scanf("%s",s);
+     printf("\n\nOriginal String     : %s",s);
+     for(i=0;i<strlen(s);i=i+2){
+     t= s[i];
+     s[i] = s[i+1];
+     s[i+1] = t;
      }
-     printf("\nAfter Swap String      : %s",str);
+     printf("\nAfter Swap String: %s",s);
 }
